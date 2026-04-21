@@ -7,11 +7,11 @@ client = anthropic.Anthropic()
 # Model is read from the MODEL environment variable.
 # Set it in your shell before running:
 #
-#   export MODEL="claude-haiku-4-5-20251001"   # fast, cost-efficient (default)
+#   export MODEL="claude-haiku-4-5-20251001"   # fast, cost-efficient
 #   export MODEL="claude-sonnet-4-6"            # balanced, strong reasoning
-#   export MODEL="claude-opus-4-6"              # most capable
+#   export MODEL="claude-opus-4-6"              # most capable (default — matches tutorial)
 #
-MODEL = os.environ.get("MODEL", "claude-haiku-4-5-20251001")
+MODEL = os.environ.get("MODEL", "claude-opus-4-6")
 
 message = client.messages.create(
     model=MODEL,

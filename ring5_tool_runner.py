@@ -6,7 +6,7 @@ from anthropic import beta_tool
 
 client = anthropic.Anthropic()
 
-MODEL = os.environ.get("MODEL", "claude-haiku-4-5-20251001")
+MODEL = os.environ.get("MODEL", "claude-opus-4-6")
 
 
 # @beta_tool infers the schema from type hints and docstring —

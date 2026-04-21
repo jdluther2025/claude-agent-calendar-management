@@ -5,7 +5,7 @@ import anthropic
 
 client = anthropic.Anthropic()
 
-MODEL = os.environ.get("MODEL", "claude-haiku-4-5-20251001")
+MODEL = os.environ.get("MODEL", "claude-opus-4-6")
 
 # Define one tool. The input_schema includes nested objects (recurrence),
 # arrays (attendees), and optional fields — closer to real-world tools
