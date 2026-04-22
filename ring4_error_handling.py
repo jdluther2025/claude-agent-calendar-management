@@ -60,7 +60,7 @@ def run_tool(name, tool_input):
 messages = [
     {
         "role": "user",
-        "content": "Schedule an all-hands with everyone: "
+        "content": "Schedule an all-hands tomorrow at 2pm for one hour with everyone: "
         + ", ".join(f"user{i}@example.com" for i in range(15)),
     }
 ]
